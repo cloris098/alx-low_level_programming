@@ -3,7 +3,7 @@
 /**
  * main - program that prints a statement to standard error
  *
- * Return: 1 Success
+ * Return: 1 (Success)
  */
 int main(void)
 {
