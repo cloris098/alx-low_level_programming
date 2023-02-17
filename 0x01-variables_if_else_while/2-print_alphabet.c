@@ -6,8 +6,12 @@
  */
 int main(void)
 {
-	char lower = "a";
-	char upper = "A";
+	char lower;
+	char upper;
+
+	lower = "a";
+	upper = "A";
+
 
 	while (lower <= "z")
 	{
