@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char lower[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char alpha[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int c;
 
-	for (i = 0; i < 26; i++)
+	for (c = 0; c < 52; c++)
 	{
-		putchar(lower[i]);
+		putchar(alpha[i]);
 	}
 	putchar('\n');
 	return (0);
