@@ -6,22 +6,19 @@
  */
 int main(void)
 {
-	char lower;
-	char upper;
+	char lower[26] = "abcdefghijklmnopqrstuvwxyz";
+	char upper[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	lower = "a";
-	upper = "A";
-
-
-	while (lower <= "z")
+	for (i = 0; i < 26; i++)
 	{
-		putchar(lower);
-		lower++;
+		putchar(lower[i]);
 	}
-	while (upper <= "Z")
+	putchar("\n");
+
+	for (i = 0; i < 26; i++)
 	{
-		putchar(upper);
-		upper++;
+		putchar(upper[i]);
 	}
 	putchar("\n");
 	return (0);
