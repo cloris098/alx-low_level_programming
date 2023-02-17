@@ -11,7 +11,7 @@ int main(void)
 
 	for (c = 0; c < 52; c++)
 	{
-		putchar(alpha[i]);
+		putchar(alpha[c]);
 	}
 	putchar('\n');
 	return (0);
