@@ -6,13 +6,14 @@
  */
 int main(void)
 {
-	char alpha = "abcdfghijklmnoprstuvwxyz";
-	int i;
+	char alpha;
 
-	for (i = 0; i < 24; i++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha[i]);
+		if (alpha != 'e' && alpha != 'q')
+			putchar(alpha);
 	}
 	putchar("\n");
+
 	return (0);
 }
