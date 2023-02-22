@@ -6,14 +6,14 @@
 int main(void)
 {
 	int i;
-	int num1 = 0;
-	int num2 = 1;
-	int fibonacci;
+	float num1 = 0;
+	float num2 = 1;
+	float fibonacci;
 
 	for (i = 0; i < 50; i++)
 	{
 		fibonacci = num1 + num2;
-		printf("%d, ", fibonacci);
+		printf("%f", fibonacci);
 
 		num1 = num2;
 		num2 = fibonacci;
@@ -21,6 +21,10 @@ int main(void)
 		if (i == 49)
 		{
 			putchar('\n');
+		}
+		else
+		{
+			putchar(',');
 		}
 	}
 	return (0);
