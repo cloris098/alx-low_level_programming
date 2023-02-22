@@ -6,14 +6,14 @@
 int main(void)
 {
 	int i;
-	float num1 = 0;
-	float num2 = 1;
-	float fibonacci;
+	unsigned long num1 = 0;
+	unsigned long num2 = 1;
+	unsigned long fibonacci;
 
 	for (i = 0; i < 50; i++)
 	{
 		fibonacci = num1 + num2;
-		printf("%f", fibonacci);
+		printf("%lu", fibonacci);
 
 		num1 = num2;
 		num2 = fibonacci;
