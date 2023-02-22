@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		fibonacci = num1 + num2;
-		printf("%d", fibonacci);
+		printf("%d, ", fibonacci);
 
 		num1 = num2;
 		num2 = fibonacci;
@@ -21,10 +21,6 @@ int main(void)
 		if (i == 49)
 		{
 			printf('\n');
-		}
-		else
-		{
-			printf(',');
 		}
 	}
 }
