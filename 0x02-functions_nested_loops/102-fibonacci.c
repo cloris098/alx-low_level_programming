@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		fibonacci = num1 + num2;
-		printf("%lu, ", fibonacci);
+		printf("%lu", fibonacci);
 
 		num1 = num2;
 		num2 = fibonacci;
@@ -21,6 +21,10 @@ int main(void)
 		if (i == 49)
 		{
 			putchar('\n');
+		}
+		else
+		{
+			putchar(',');
 		}
 	}
 	return (0);
