@@ -18,7 +18,7 @@ int main(void)
 		fib2 = fibonacci;
 		if (fibonacci % 2 == 0)
 		{
-			fibsum += fibonacci
+			fibsum += fibonacci;
 		}
 	}
 	printf("%i\n", fibsum);
