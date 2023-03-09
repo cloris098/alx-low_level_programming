@@ -14,7 +14,7 @@ int checks_prime(int div, int num)
 	else if (div > num / 2)
 		return (1);
 	else
-		return (if_prime(div + 1, num));
+		return (checks_prime(div + 1, num));
 }
 
 /**
