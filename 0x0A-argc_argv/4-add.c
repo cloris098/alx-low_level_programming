@@ -3,10 +3,10 @@
 #include <ctype.h>
 
 /**
- * main - Prints the addition of positive numbers.
- * @argc: Argument count/number.
- * @argv: Argument vector , array of pointers to the arguments.
- * Return: If a number contains symbols that are non-digits return 1 else return 0
+ * main - prints the addition of positive numbers.
+ * @argc: argument count/number.
+ * @argv: argument vector , array of pointers to the arguments.
+ * Return: Always 0 else 1 if error
  */
 
 int main(int argc, char *argv[])
