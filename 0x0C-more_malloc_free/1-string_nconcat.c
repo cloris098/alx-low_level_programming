@@ -5,7 +5,7 @@
  * string_nconcat - concatenates two strings
  * @s1: first string to concatenate
  * @s2: second string to concatenate
- * @n: bytes of s2
+ * @n: bytes of s2 to be concatenated into s1
  * Return: newly allocated space in memory with s1 in it
  * followed by the first n bytes of s2
  * else NULL
