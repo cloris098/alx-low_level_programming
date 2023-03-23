@@ -2,16 +2,9 @@
 #define CALC_H
 
 /**
- * File: 3-calc.h
- * Desc: header file containing all data structures and
- * prototypes used by the 3-main.c program.
- */
-
-/**
  * struct op - Struct op
- *
- * @op: the operator.
- * @f: function associated.
+ * @op: the operator
+ * @f: function associated
  */
 
 typedef struct op
