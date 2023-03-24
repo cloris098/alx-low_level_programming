@@ -1,12 +1,12 @@
-#include "variadic function.h"
+#include "variadic_function.h"
 #include <stdarg.h>
 #include <stdio.h>
 
 /**
  * print_strings - prints strings
  * @separator: separator string to print between the strings
- * @n: number of strings to passed to the function
- * Return: void. If seperator is NULL, dont print
+ * @n: number of strings passed to the function
+ * Return: if seperator is NULL, dont print
  * If any string is NULL, print (nil) instead
  */
 
