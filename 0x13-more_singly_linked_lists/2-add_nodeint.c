@@ -5,8 +5,7 @@
  * @head: a pointer to a pointer to the head of listint_t
  * @n: an integer value
  *
- * Return: On success, address of new element.
- * On failure, NULL.
+ * Return: Success, address of new element, Failure, NULL.
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
