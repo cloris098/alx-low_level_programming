@@ -1,5 +1,7 @@
 #include "main.h"
 
+#define CHAR_BITS 8
+
 /**
  * get_bit - returns the value of a bit at a given index.
  * @n: bit
@@ -10,16 +12,14 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= (sizeof(unsigned long int) * 8))
+	if (index >= (sizeof(unsigned long int) * CHAR_BITS))
 	{
 		return (-1);
 	}
 
-	unsigned long int a = 0;
-
-	if ((n & (1 << index)) == a)
+	if ((n & (1 << index)) == 0)
 	{
-		return (a);
+		return (0);
 	}
 
 	return (1);
