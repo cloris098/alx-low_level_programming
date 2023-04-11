@@ -1,48 +1,24 @@
 #include "main.h"
 
-#define CHAR_BITS 8
-#define INT_BITS (sizeof(unsigned long int) * CHAR_BITS)
-
 /**
- * print_binary - prints the binary representation of a number.
- * @num: The decimal value to convert to binary.
- */
-
-void print_binary(unsigned long int num)
-{
-	if (num >> 1)
-	{
-		print_binary(num >> 1);
-	}
-
-	putc((num & 1) ? '1' : '0', stdout);
-}
-
-/**
- * get_bit - returns the value of a bit at a given index
- * @n: The decimal value to get a bit from
- * @index: The index of the bit to get
+ * get_bit - returns the value of a bit at a given index.
+ * @n: bit
+ * @index: is the index, starting from 0 of the bit you want to get
  *
- * Return: The value of the bit at the given index, else -1
+ * Return: the value of the bit at index index or -1 if an error occured
  */
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= INT_BITS)
+	if (index >= (sizeof(unsigned long int) * 8))
 	{
 		return (-1);
 	}
 
-	#ifdef DEBUG
-	printf("\n[%ld >> %d] is %ld.\n", n, index, (n >> index));
-	printf("%ld in binary: ", n);
-	print_binary(n);
-	printf("\n[%ld >> %d] in binary: ", n, index);
-	print_binary(n >> index);
-	printf(" <- last bit is bit at index %d\n\n", index);
-	#endif
+	if ((n & (1 << index)) == 0)
+	{
+		return (0);
+	}
 
-	int bit = ((n >> index) & 1);
-
-	return (bit);
+	return (1);
 }
